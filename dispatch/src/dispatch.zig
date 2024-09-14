@@ -49,6 +49,14 @@ pub fn onQueryGateway(_: *httpz.Request, res: *httpz.Response) !void {
     proto.CNAKLGMDLPE = true;
     //proto.Unknown = true;
     //proto.Unknown = true;
+    proto.NNGLEBKCMLA = true;
+    proto.APJECJMGAKC = true;
+    proto.NPHDIMJOKNI = true;
+    proto.JGCIILJEHHE = true;
+    proto.LAABLMNKLLD = true;
+    proto.OFJAKNEDMDM = true;
+    proto.EBKBNEKCOHI = true;
+
 
     const data = try proto.encode(res.arena);
     const size = Base64Encoder.calcSize(data.len);
