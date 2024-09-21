@@ -10,11 +10,11 @@ pub fn onShieldLogin(req: *httpz.Request, res: *httpz.Response) !void {
         .data = .{
             .account = .{
                 .area_code = "**",
-                .email = "FeixiaoSR",
+                .email = "YunliSR",
                 .country = "CN",
                 .is_email_verify = "1",
                 .token = "aa",
-                .uid = "1234",
+                .uid = "666",
             },
         },
     }, .{});
@@ -24,7 +24,7 @@ pub fn onVerifyLogin(req: *httpz.Request, res: *httpz.Response) !void {
     std.log.debug("onVerifyLogin: {any}", .{req.body_len});
 
     var token: []const u8 = "aa";
-    var uid: []const u8 = "1234";
+    var uid: []const u8 = "666";
     if (try req.jsonObject()) |t| {
         if (t.get("token")) |token_value| {
             token = token_value.string;
@@ -39,7 +39,7 @@ pub fn onVerifyLogin(req: *httpz.Request, res: *httpz.Response) !void {
         .message = "OK",
         .data = .{
             .account = .{
-                .email = "FeixiaoSR",
+                .email = "YunliSR",
                 .token = token,
                 .uid = uid,
             },
