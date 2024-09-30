@@ -34,10 +34,10 @@ pub fn onQueryGateway(_: *httpz.Request, res: *httpz.Response) !void {
     proto.port = 23301;
     proto.ip = .{ .Const = "127.0.0.1" };
     proto.AIPNJNLHFBP = .{ .Const = "0" }; // ifix_version
-    proto.LLFDDPLHGBM = .{ .Const = "8023974" }; // lua_version
-    proto.lua_url = .{ .Const = "https://autopatchos.starrails.com/lua/BetaLive/output_8023974_8a20ac590d04" };
-    proto.asset_bundle_url = .{ .Const = "https://autopatchos.starrails.com/asb/BetaLive/output_8023914_1c5d3bc509a7" };
-    proto.ex_resource_url = .{ .Const = "https://autopatchos.starrails.com/design_data/BetaLive/output_8023914_b27d1db5c7a4" };
+    proto.LLFDDPLHGBM = .{ .Const = "8110845" }; // lua_version
+    proto.lua_url = .{ .Const = "https://autopatchcn.bhsr.com/lua/BetaLive/output_8110845_6e6327ca1e4b" };
+    proto.asset_bundle_url = .{ .Const = "https://autopatchcn.bhsr.com/asb/BetaLive/output_8110568_1ca8e9e840cb" };
+    proto.ex_resource_url = .{ .Const = "https://autopatchcn.bhsr.com/design_data/BetaLive/output_8140306_45c593e71df0" };
     
     proto.IALOEKGOJOC = true;
     proto.CCHNJJFKGPM = true;
